@@ -190,6 +190,8 @@ message Pair {
         Delete = 1;
     }
     OP op = 3;
+    // The commit_ts for each pair. used for PiTR recovery
+    uint64 commit_ts = 4;
 }
 
 message WriteBatch {
